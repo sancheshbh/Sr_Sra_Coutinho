@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sr. & Sra. Coutinho — Alfaiataria exclusiva, ternos e moda masculina social. Atendimento personalizado desde 2021." />
+  <title>Sr. & Sra. Coutinho | Alfaiataria Exclusiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       ANNOUNCEMENT BAR
+  ═══════════════════════════════════════════ -->
+  <div class="announcement-bar">
+    <p>✦ Atendimento personalizado com consultor especialista &nbsp;|&nbsp; Frete grátis acima de R$ 499 &nbsp;|&nbsp; Parcele em até 12x sem juros ✦</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER / NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="#inicio" class="logo">
+        <div class="logo__hexagon">
+          <svg viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <polygon points="40,2 78,22 78,68 40,88 2,68 2,22" stroke="url(#goldGrad)" stroke-width="3" fill="none"/>
+            <text x="40" y="58" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="38" font-weight="700" fill="url(#goldGrad)">S</text>
+            <defs>
+              <linearGradient id="goldGrad" x1="0" y1="0" x2="80" y2="90" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#F0D080"/>
+                <stop offset="50%" stop-color="#C9A84C"/>
+                <stop offset="100%" stop-color="#9A7A30"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo__text">
+          <span class="logo__name">Sr. <em>&</em> Sra.</span>
+          <span class="logo__surname">Coutinho</span>
+          <span class="logo__tagline">Exclusive · Since 2021</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav" role="navigation" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="#colecao" class="nav__link">Coleção</a></li>
+          <li><a href="#casamentos" class="nav__link nav__link--highlight">Casamentos</a></li>
+          <li><a href="#sobre" class="nav__link">Nossa História</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+        <a href="https://wa.me/559492350240?text=Olá!%20Gostaria%20de%20uma%20consultoria%20personalizada." 
+           class="btn btn--whatsapp btn--sm" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Consultor
+        </a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="https://wa.me/559492350240?text=Olá!%20Gostaria%20de%20uma%20consultoria%20personalizada." 
+           class="btn btn--whatsapp btn--sm header__whatsapp" target="_blank" rel="noopener" aria-label="Falar com consultor no WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Consultor
+        </a>
+        <button class="cart-icon" id="cartBtn" aria-label="Ver sacola de compras">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO — SECTION 1
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="inicio" aria-label="Banner principal">
+    <div class="hero__bg">
+      <div class="hero__overlay"></div>
+      <div class="hero__hex-pattern" aria-hidden="true">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="hexPat" x="0" y="0" width="60" height="70" patternUnits="userSpaceOnUse"><polygon points="30,2 58,17 58,53 30,68 2,53 2,17" fill="none" stroke="rgba(201,168,76,0.08)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(#hexPat)"/></svg>
+      </div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">Exclusive · Since 2021</p>
+      <h1 class="hero__title reveal">
+        O traje certo<br/>
+        <em>para cada momento</em><br/>
+        da sua vida.
+      </h1>
+      <p class="hero__subtitle reveal">Alfaiataria exclusiva, ternos sob medida e moda masculina social. Atendimento personalizado com quem entende do assunto.</p>
+      <div class="hero__actions reveal">
+        <a href="#colecao" class="btn btn--gold btn--lg">Ver Coleção</a>
+        <a href="https://wa.me/559492350240?text=Olá!%20Gostaria%20de%20agendar%20uma%20consultoria." 
+           class="btn btn--outline btn--lg" target="_blank" rel="noopener">
+          Agendar Consultoria
+        </a>
+      </div>
+      <div class="hero__badges reveal">
+        <div class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>Qualidade Garantida</span>
+        </div>
+        <div class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          <span>Atendimento Humanizado</span>
+        </div>
+        <div class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Entrega Rápida</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>Role para explorar</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       DIFERENCIAIS STRIP
+  ═══════════════════════════════════════════ -->
+  <section class="strip" aria-label="Diferenciais da marca">
+    <div class="strip__inner">
+      <div class="strip__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        <div>
+          <strong>Tecidos Premium</strong>
+          <span>Importados e nacionais selecionados</span>
+        </div>
+      </div>
+      <div class="strip__divider" aria-hidden="true">✦</div>
+      <div class="strip__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        <div>
+          <strong>Consultoria Especializada</strong>
+          <span>Auxílio na escolha ideal para você</span>
+        </div>
+      </div>
+      <div class="strip__divider" aria-hidden="true">✦</div>
+      <div class="strip__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <div>
+          <strong>Entrega em Todo Brasil</strong>
+          <span>Rápida e com segurança total</span>
+        </div>
+      </div>
+      <div class="strip__divider" aria-hidden="true">✦</div>
+      <div class="strip__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div>
+          <strong>Troca Facilitada</strong>
+          <span>30 dias para trocar sem burocracia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CATEGORIAS
+  ═══════════════════════════════════════════ -->
+  <section class="categories section" id="colecao" aria-label="Categorias da coleção">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Nossa Coleção</p>
+        <h2 class="section-title">Elegância para cada ocasião</h2>
+        <div class="gold-divider" aria-hidden="true"><span></span><svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor" aria-hidden="true"><polygon points="10,1 12.9,7 20,8.2 15,13.1 16.2,20 10,16.7 3.8,20 5,13.1 0,8.2 7.1,7"/></svg><span></span></div>
+      </div>
+      <div class="categories__grid">
+        <a href="#ternos" class="category-card category-card--large reveal">
+          <div class="category-card__img" style="background:linear-gradient(160deg,#1a1a1a 0%,#2d2d2d 100%)">
+            <div class="category-card__placeholder">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="60" height="60" aria-hidden="true">
+                <path d="M20 15 L20 70 L60 70 L60 15 L50 10 C50 10 45 20 40 20 C35 20 30 10 30 10 Z" stroke="url(#g1)" stroke-width="2" fill="none"/>
+                <path d="M30 10 L25 25 L20 20" stroke="url(#g1)" stroke-width="2" fill="none"/>
+                <path d="M50 10 L55 25 L60 20" stroke="url(#g1)" stroke-width="2" fill="none"/>
+                <line x1="40" y1="30" x2="40" y2="60" stroke="url(#g1)" stroke-width="1.5"/>
+                <defs><linearGradient id="g1" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F0D080"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs>
+              </svg>
+            </div>
+          </div>
+          <div class="category-card__info">
+            <h3>Ternos</h3>
+            <p>Corte clássico & moderno</p>
+            <span class="category-card__cta">Explorar →</span>
+          </div>
+        </a>
+
+        <a href="#blazers" class="category-card reveal">
+          <div class="category-card__img" style="background:linear-gradient(160deg,#1e1e1e 0%,#303030 100%)">
+            <div class="category-card__placeholder">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="52" height="52" aria-hidden="true">
+                <path d="M15 18 L15 68 L65 68 L65 18 L52 8 C52 8 48 22 40 22 C32 22 28 8 28 8 Z" stroke="url(#g2)" stroke-width="2" fill="none"/>
+                <defs><linearGradient id="g2" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F0D080"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs>
+              </svg>
+            </div>
+          </div>
+          <div class="category-card__info">
+            <h3>Blazers</h3>
+            <p>Estilo e versatilidade</p>
+            <span class="category-card__cta">Explorar →</span>
+          </div>
+        </a>
+
+        <a href="#camisas" class="category-card reveal">
+          <div class="category-card__img" style="background:linear-gradient(160deg,#1c1c1c 0%,#2a2a2a 100%)">
+            <div class="category-card__placeholder">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="52" height="52" aria-hidden="true">
+                <path d="M20 12 L10 30 L20 28 L20 70 L60 70 L60 28 L70 30 L60 12 L50 20 C50 20 46 28 40 28 C34 28 30 20 30 20 Z" stroke="url(#g3)" stroke-width="2" fill="none"/>
+                <defs><linearGradient id="g3" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F0D080"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs>
+              </svg>
+            </div>
+          </div>
+          <div class="category-card__info">
+            <h3>Camisas Sociais</h3>
+            <p>Tecidos nobres, caimento perfeito</p>
+            <span class="category-card__cta">Explorar →</span>
+          </div>
+        </a>
+
+        <a href="#acessorios" class="category-card reveal">
+          <div class="category-card__img" style="background:linear-gradient(160deg,#181818 0%,#262626 100%)">
+            <div class="category-card__placeholder">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="52" height="52" aria-hidden="true">
+                <path d="M30 25 L30 55 L50 55 L50 25 C50 25 48 20 40 20 C32 20 30 25 30 25 Z" stroke="url(#g4)" stroke-width="2" fill="none"/>
+                <line x1="40" y1="20" x2="40" y2="55" stroke="url(#g4)" stroke-width="1.5"/>
+                <defs><linearGradient id="g4" x1="0" y1="0" x2="80" y2="80" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F0D080"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs>
+              </svg>
+            </div>
+          </div>
+          <div class="category-card__info">
+            <h3>Acessórios</h3>
+            <p>Gravatas, lenços e mais</p>
+            <span class="category-card__cta">Explorar →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PRODUTOS EM DESTAQUE
+  ═══════════════════════════════════════════ -->
+  <section class="products section" id="ternos" aria-label="Produtos em destaque">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Mais Procurados</p>
+        <h2 class="section-title">Peças que fazem a diferença</h2>
+        <div class="gold-divider" aria-hidden="true"><span></span><svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor" aria-hidden="true"><polygon points="10,1 12.9,7 20,8.2 15,13.1 16.2,20 10,16.7 3.8,20 5,13.1 0,8.2 7.1,7"/></svg><span></span></div>
+      </div>
+      <div class="products__grid">
+
+        <!-- Product Card 1 -->
+        <article class="product-card reveal" data-product="1">
+          <div class="product-card__badge">Mais Vendido</div>
+          <div class="product-card__img">
+            <div class="product-card__placeholder">
+              <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg" width="70" aria-hidden="true">
+                <path d="M25 20 L25 110 L75 110 L75 20 L62 10 C62 10 56 26 50 26 C44 26 38 10 38 10 Z" stroke="url(#pg1)" stroke-width="2" fill="rgba(201,168,76,0.04)"/>
+                <path d="M38 10 L33 28 L25 24" stroke="url(#pg1)" stroke-width="1.5" fill="none"/>
+                <path d="M62 10 L67 28 L75 24" stroke="url(#pg1)" stroke-width="1.5" fill="none"/>
+                <line x1="50" y1="35" x2="50" y2="90" stroke="url(#pg1)" stroke-width="1.5"/>
+                <circle cx="50" cy="45" r="3" fill="url(#pg1)"/>
+                <circle cx="50" cy="57" r="3" fill="url(#pg1)"/>
+                <circle cx="50" cy="69" r="3" fill="url(#pg1)"/>
+                <defs><linearGradient id="pg1" x1="0" y1="0" x2="100" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F0D080"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs>
+              </svg>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__wishlist" aria-label="Adicionar aos favoritos">♡</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__category">Terno</p>
+            <h3 class="product-card__name">Terno Executivo Slim — Preto</h3>
+            <div class="product-card__stars" aria-label="Avaliação: 5 estrelas">★★★★★ <span>(48)</span></div>
+            <div class="product-card__sizes">
+              <span class="size active" role="button" tabindex="0">P</span>
+              <span class="size" role="button" tabindex="0">M</span>
+              <span class="size" role="button" tabindex="0">G</span>
+              <span class="size" role="button" tabindex="0">GG</span>
+            </div>
+            <div class="product-card__pricing">
+              <span class="price-old">R$ 899,00</span>
+              <span class="price-current">R$ 749,00</span>
+            </div>
+            <div class="product-card__btns">
+              <button class="btn btn--gold btn--full add-to-cart" 
+                      data-name="Terno Executivo Slim — Preto" 
+                      data-price="749">Adicionar à Sacola</button>
+              <a href="https://wa.me/559492350240?text=Olá!%20Tenho%20interesse%20no%20Terno%20Executivo%20Slim%20Preto.%20Pode%20me%20ajudar?" 
+                 class="btn btn--ghost btn--full" target="_blank" rel="noopener">
+                Falar com Consultor
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 2 -->
+        <article class="product-card reveal" data-product="2">
+          <div class="product-card__badge product-card__badge--gold">Lançamento</div>
+          <div class="product-card__img">
+            <div class="product-card__placeholder">
+              <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg" width="70" aria-hidden="true">
+                <path d="M20 18 L20 108 L80 108 L80 18 L65 8 C65 8 58 24 50 24 C42 24 35 8 35 8 Z" stroke="url(#pg2)" stroke-width="2" fill="rgba(201,168,76,0.04)"/>
+                <defs><linearGradient id="pg2" x1="0" y1="0" x2="100" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F0D080"/><stop offset="100%" stop-color="#9A7A30"/></linearGradient></defs>
+              </svg>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__wishlist" aria-label="Adicionar aos favoritos">♡</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__category">Terno</p>
+            <h3 class="product-card__name">Terno Slim Fit — Cinza Grafite</h3>
+            <div class="product-card__stars" aria-label="Avaliação: 5 estrelas">★★★★★ <span>(31)</span></div>
+            <div class="product-card__sizes">
+              <span class="size" role="button" tabindex="0">P</span>
+              <span class="size active" role="button" tabindex="0">M</span>
+              <span class="size" role="button" tabindex="0">G</span>
+              <span class="size" role="button" tabindex="0">GG</span>
+            </div>
+            <div class="product-card__pricing">
+              <span class="price-current">R$ 849,00</span>
+            </div>
+            <div class="product-card__btns">
+              <button class="btn btn--gold btn--full add-to-cart" 
+                      data-name="Terno Slim Fit — Cinza Grafite" 
+                      data-price="849">Adicionar à Sacola</button>
+              <a href="https://wa.me/559492350240?text=Olá!%20Tenho%20interesse%20no%20Terno%20Cinza%20Grafite." 
+                 class="btn btn--ghost btn--full" target="_blank" rel="noopener">
+                Falar com Consultor
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 3 -->
+        <article class="product-card reveal" data-product="3">
+          <div class="product-card__img">
+            <div class="product-card__placeholder">
+              <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg" width="70" aria-hidden="true">
+                <path d="M18 15 L18 105 L82 105 L82 15 L68 5 C68 5 62 22 50 22 C38 22 32 5 32 5 Z" stroke="url(#pg3)" stroke-width="2" fill="rgba(201,168,76,0.04)"/>
+                <path d="M32 5 L26 26 L18 20" stroke="url(#pg3)" stroke-width="1.5" fill="none"/>
+                <path d="M68 5 L74 26 L82 20" stroke="url(#pg3)" stroke-width="1.5" fill="none"/>
+                <defs><linearGradient id="pg3" x1="0" y1="0" x2="100" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F0D080"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs>
+              </svg>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__wishlist" aria-label="Adicionar aos favoritos">♡</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__category">Blazer</p>
+            <h3 class="product-card__name">Blazer Casual Premium — Navy</h3>
+            <div class="product-card__stars" aria-label="Avaliação: 4.8 estrelas">★★★★★ <span>(22)</span></div>
+            <div class="product-card__sizes">
+              <span class="size" role="button" tabindex="0">P</span>
+              <span class="size" role="button" tabindex="0">M</span>
+              <span class="size active" role="button" tabindex="0">G</span>
+              <span class="size" role="button" tabindex="0">GG</span>
+            </div>
+            <div class="product-card__pricing">
+              <span class="price-current">R$ 589,00</span>
+            </div>
+            <div class="product-card__btns">
+              <button class="btn btn--gold btn--full add-to-cart" 
+                      data-name="Blazer Casual Premium — Navy" 
+                      data-price="589">Adicionar à Sacola</button>
+              <a href="https://wa.me/559492350240?text=Olá!%20Tenho%20interesse%20no%20Blazer%20Navy." 
+                 class="btn btn--ghost btn--full" target="_blank" rel="noopener">
+                Falar com Consultor
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product Card 4 -->
+        <article class="product-card reveal" data-product="4">
+          <div class="product-card__badge product-card__badge--dark">Exclusivo</div>
+          <div class="product-card__img">
+            <div class="product-card__placeholder">
+              <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg" width="70" aria-hidden="true">
+                <path d="M22 14 L12 38 L22 34 L22 108 L78 108 L78 34 L88 38 L78 14 L66 24 C66 24 60 36 50 36 C40 36 34 24 34 24 Z" stroke="url(#pg4)" stroke-width="2" fill="rgba(201,168,76,0.04)"/>
+                <defs><linearGradient id="pg4" x1="0" y1="0" x2="100" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F0D080"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs>
+              </svg>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__wishlist" aria-label="Adicionar aos favoritos">♡</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__category">Camisa Social</p>
+            <h3 class="product-card__name">Camisa Oxford Premium — Branca</h3>
+            <div class="product-card__stars" aria-label="Avaliação: 5 estrelas">★★★★★ <span>(67)</span></div>
+            <div class="product-card__sizes">
+              <span class="size" role="button" tabindex="0">P</span>
+              <span class="size active" role="button" tabindex="0">M</span>
+              <span class="size" role="button" tabindex="0">G</span>
+              <span class="size" role="button" tabindex="0">GG</span>
+            </div>
+            <div class="product-card__pricing">
+              <span class="price-old">R$ 299,00</span>
+              <span class="price-current">R$ 229,00</span>
+            </div>
+            <div class="product-card__btns">
+              <button class="btn btn--gold btn--full add-to-cart" 
+                      data-name="Camisa Oxford Premium — Branca" 
+                      data-price="229">Adicionar à Sacola</button>
+              <a href="https://wa.me/559492350240?text=Olá!%20Tenho%20interesse%20na%20Camisa%20Oxford%20Branca." 
+                 class="btn btn--ghost btn--full" target="_blank" rel="noopener">
+                Falar com Consultor
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Size Guide CTA -->
+      <div class="size-guide-cta reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <p>Não sabe seu tamanho? <button class="link-gold" id="openSizeGuide">Consulte nossa tabela de medidas →</button></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CASAMENTOS — SEÇÃO ESPECIAL
+  ═══════════════════════════════════════════ -->
+  <section class="weddings section" id="casamentos" aria-label="Seção de casamentos">
+    <div class="weddings__bg" aria-hidden="true">
+      <div class="weddings__hex-deco">
+        <svg viewBox="0 0 200 230" fill="none" xmlns="http://www.w3.org/2000/svg" width="200" opacity="0.07" aria-hidden="true">
+          <polygon points="100,5 195,55 195,175 100,225 5,175 5,55" stroke="#C9A84C" stroke-width="2" fill="none"/>
+          <polygon points="100,20 180,65 180,165 100,210 20,165 20,65" stroke="#C9A84C" stroke-width="1" fill="none"/>
+        </svg>
+      </div>
+    </div>
+    <div class="container">
+      <div class="section-header section-header--light">
+        <p class="section-eyebrow section-eyebrow--gold">Momentos Inesquecíveis</p>
+        <h2 class="section-title section-title--light">O dia mais importante<br/><em>merece o traje perfeito</em></h2>
+        <div class="gold-divider" aria-hidden="true"><span></span><svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor" aria-hidden="true"><polygon points="10,1 12.9,7 20,8.2 15,13.1 16.2,20 10,16.7 3.8,20 5,13.1 0,8.2 7.1,7"/></svg><span></span></div>
+      </div>
+      <div class="weddings__cards">
+        <div class="wedding-card reveal">
+          <div class="wedding-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+              <path d="M30 10 L30 50 M20 18 L30 10 L40 18" stroke="url(#wg1)" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <circle cx="30" cy="30" r="28" stroke="url(#wg1)" stroke-width="1.5" fill="none"/>
+              <defs><linearGradient id="wg1" x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F0D080"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Noivos</h3>
+          <p>O terno que marca o início de uma nova história. Consultoria exclusiva para o grande dia.</p>
+          <a href="https://wa.me/559492350240?text=Olá!%20Sou%20noivo%20e%20gostaria%20de%20agendar%20uma%20consultoria%20para%20meu%20casamento." 
+             class="btn btn--gold-outline" target="_blank" rel="noopener">
+            Agendar Consultoria
+          </a>
+        </div>
+        <div class="wedding-card reveal">
+          <div class="wedding-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+              <circle cx="22" cy="18" r="10" stroke="url(#wg2)" stroke-width="1.5" fill="none"/>
+              <circle cx="38" cy="18" r="10" stroke="url(#wg2)" stroke-width="1.5" fill="none"/>
+              <path d="M5 55 C5 42 14 35 22 35 C30 35 30 35 38 35 C46 35 55 42 55 55" stroke="url(#wg2)" stroke-width="1.5" fill="none"/>
+              <defs><linearGradient id="wg2" x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F0D080"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Padrinhos</h3>
+          <p>Conjunto perfeito para toda a comitiva. Padronização elegante que harmoniza sem perder a identidade.</p>
+          <a href="https://wa.me/559492350240?text=Olá!%20Preciso%20de%20ternos%20para%20padrinhos%20de%20casamento." 
+             class="btn btn--gold-outline" target="_blank" rel="noopener">
+            Solicitar Orçamento
+          </a>
+        </div>
+        <div class="wedding-card reveal">
+          <div class="wedding-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+              <path d="M10 50 L30 10 L50 50 Z" stroke="url(#wg3)" stroke-width="1.5" fill="none"/>
+              <path d="M20 35 L40 35" stroke="url(#wg3)" stroke-width="1.5"/>
+              <circle cx="30" cy="28" r="4" fill="url(#wg3)"/>
+              <defs><linearGradient id="wg3" x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F0D080"/><stop offset="100%" stop-color="#C9A84C"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Eventos Especiais</h3>
+          <p>Formaturas, aniversários, eventos corporativos. Cada ocasião especial merece um look à altura.</p>
+          <a href="https://wa.me/559492350240?text=Olá!%20Preciso%20de%20um%20traje%20para%20um%20evento%20especial." 
+             class="btn btn--gold-outline" target="_blank" rel="noopener">
+            Saiba Mais
+          </a>
+        </div>
+      </div>
+      <div class="weddings__cta reveal">
+        <p class="weddings__quote">"Seu momento merece o traje certo."</p>
+        <a href="https://wa.me/559492350240?text=Olá!%20Gostaria%20de%20agendar%20uma%20visita%20à%20loja%20para%20meu%20casamento." 
+           class="btn btn--gold btn--lg" target="_blank" rel="noopener">
+          Agendar Visita à Loja
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SOBRE / HISTÓRIA
+  ═══════════════════════════════════════════ -->
+  <section class="about section" id="sobre" aria-label="Nossa história">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual reveal">
+          <div class="about__hex-frame" aria-hidden="true">
+            <svg viewBox="0 0 300 345" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" aria-hidden="true">
+              <polygon points="150,10 290,85 290,260 150,335 10,260 10,85" stroke="url(#aboutGold)" stroke-width="2" fill="rgba(201,168,76,0.04)"/>
+              <polygon points="150,30 270,100 270,245 150,315 30,245 30,100" stroke="url(#aboutGold)" stroke-width="0.5" fill="none" opacity="0.5"/>
+              <text x="150" y="185" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="80" font-weight="700" fill="url(#aboutGold)" opacity="0.15">SC</text>
+              <text x="150" y="230" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="11" letter-spacing="6" fill="url(#aboutGold)" opacity="0.6">EXCLUSIVE</text>
+              <text x="150" y="260" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="10" letter-spacing="4" fill="url(#aboutGold)" opacity="0.5">SINCE 2021</text>
+              <defs>
+                <linearGradient id="aboutGold" x1="0" y1="0" x2="300" y2="345" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#F0D080"/>
+                  <stop offset="100%" stop-color="#9A7A30"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="about__content reveal">
+          <p class="section-eyebrow">Nossa História</p>
+          <h2 class="section-title about__title">Nascemos da paixão<br/>pela <em>elegância real</em></h2>
+          <div class="gold-divider gold-divider--left" aria-hidden="true"><span></span><svg viewBox="0 0 20 20" width="14" height="14" fill="currentColor" aria-hidden="true"><polygon points="10,1 12.9,7 20,8.2 15,13.1 16.2,20 10,16.7 3.8,20 5,13.1 0,8.2 7.1,7"/></svg><span></span></div>
+          <p class="about__text">A Sr. & Sra. Coutinho nasceu em 2021 com uma missão clara: oferecer moda masculina social de alta qualidade com o calor de um atendimento familiar e personalizado. Cada peça é cuidadosamente selecionada para que nossos clientes cheguem a qualquer evento com confiança e distinção.</p>
+          <p class="about__text">Acreditamos que um bom terno não é apenas roupa — é uma declaração de quem você é. Por isso, cada visita à nossa loja é uma experiência de consultoria completa, do tecido ao acabamento.</p>
+          <div class="about__values">
+            <div class="value-item">
+              <span class="value-item__icon">✦</span>
+              <div>
+                <strong>Qualidade sem Compromisso</strong>
+                <p>Tecidos selecionados, acabamentos impecáveis em cada peça.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-item__icon">✦</span>
+              <div>
+                <strong>Atendimento Exclusivo</strong>
+                <p>Você não é um número — é um cliente que merece atenção total.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-item__icon">✦</span>
+              <div>
+                <strong>Experiência Boutique</strong>
+                <p>O prazer de uma loja física aliado à comodidade do digital.</p>
+              </div>
+            </div>
+          </div>
+          <a href="https://wa.me/559492350240?text=Olá!%20Gostaria%20de%20conhecer%20mais%20sobre%20a%20Sr.%20%26%20Sra.%20Coutinho." 
+             class="btn btn--gold" target="_blank" rel="noopener">
+            Conheça Nossa Loja
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       DEPOIMENTOS
+  ═══════════════════════════════════════════ -->
+  <section class="testimonials section" aria-label="Depoimentos de clientes">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Prova Social</p>
+        <h2 class="section-title">O que nossos clientes dizem</h2>
+        <div class="gold-divider" aria-hidden="true"><span></span><svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor" aria-hidden="true"><polygon points="10,1 12.9,7 20,8.2 15,13.1 16.2,20 10,16.7 3.8,20 5,13.1 0,8.2 7.1,7"/></svg><span></span></div>
+      </div>
+      <div class="testimonials__slider" id="testimonialsSlider" role="list">
+        <div class="testimonial-card active" role="listitem">
+          <div class="testimonial-card__stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote>"Me cassei com o terno dos meus sonhos. A equipe me acompanhou em cada detalhe, desde a escolha do tecido até os ajustes finais. Resultado impecável."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-avatar" aria-hidden="true">RM</div>
+            <div>
+              <strong>Rafael Mendonça</strong>
+              <span>Noivo — Junho 2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" role="listitem">
+          <div class="testimonial-card__stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote>"Comprei um terno para minha formatura e recebi muito mais do que esperava. A qualidade é excepcional e o atendimento pelo WhatsApp foi incrível. Recomendo a todos."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-avatar" aria-hidden="true">LC</div>
+            <div>
+              <strong>Lucas Carvalho</strong>
+              <span>Formatura — Dezembro 2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" role="listitem">
+          <div class="testimonial-card__stars" aria-label="5 estrelas">★★★★★</div>
+          <blockquote>"Vesti 8 padrinhos com Sr. & Sra. Coutinho. Todos com o mesmo padrão impecável. Os comentários sobre os ternos foram o assunto do casamento. Perfeito em tudo."</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-avatar" aria-hidden="true">AP</div>
+            <div>
+              <strong>Alexandre Pinheiro</strong>
+              <span>Casamento — Março 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials__dots" role="tablist" aria-label="Navegar pelos depoimentos">
+        <button class="dot active" role="tab" aria-selected="true" aria-label="Depoimento 1" data-index="0"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-label="Depoimento 2" data-index="1"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-label="Depoimento 3" data-index="2"></button>
+      </div>
+      <div class="testimonials__numbers reveal">
+        <div class="stat-item">
+          <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+          <p>Clientes Satisfeitos</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+          <p>Índice de Satisfação</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="4">0</span><span class="stat-suffix"> anos</span>
+          <p>De Excelência</p>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="150">0</span><span class="stat-suffix">+</span>
+          <p>Casamentos Vestidos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CTA BANNER — CONSULTORIA
+  ═══════════════════════════════════════════ -->
+  <section class="cta-banner" aria-label="Chamada para consultoria">
+    <div class="cta-banner__hex" aria-hidden="true"></div>
+    <div class="container">
+      <div class="cta-banner__content reveal">
+        <p class="section-eyebrow section-eyebrow--gold">Atendimento Especializado</p>
+        <h2>"Encontre o terno ideal<br/>com a ajuda de um especialista"</h2>
+        <p>Não deixe a dúvida do tamanho ou do modelo te impedir. Nossa equipe está pronta para te guiar na escolha perfeita — online ou presencialmente.</p>
+        <div class="cta-banner__btns">
+          <a href="https://wa.me/559492350240?text=Olá!%20Gostaria%20de%20uma%20consultoria%20personalizada%20para%20escolher%20meu%20terno." 
+             class="btn btn--gold btn--lg btn--whatsapp-full" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Falar no WhatsApp Agora
+          </a>
+          <a href="#sobre" class="btn btn--outline-light btn--lg">Conhecer a Marca</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       LOCALIZAÇÃO
+  ═══════════════════════════════════════════ -->
+  <section class="location section" id="contato" aria-label="Localização e contato">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Nos Visite</p>
+        <h2 class="section-title">Venha conhecer nossa loja</h2>
+        <div class="gold-divider" aria-hidden="true"><span></span><svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor" aria-hidden="true"><polygon points="10,1 12.9,7 20,8.2 15,13.1 16.2,20 10,16.7 3.8,20 5,13.1 0,8.2 7.1,7"/></svg><span></span></div>
+      </div>
+      <div class="location__grid">
+        <div class="location__info reveal">
+          <div class="location__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <strong>Endereço</strong>
+              <p>Rua da Elegância, 123 — Centro<br/>Sua Cidade, UF · CEP 00000-000</p>
+            </div>
+          </div>
+          <div class="location__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div>
+              <strong>Horários de Funcionamento</strong>
+              <p>Segunda a Sexta: 9h às 19h<br/>Sábado: 9h às 17h<br/>Domingo: Mediante agendamento</p>
+            </div>
+          </div>
+          <div class="location__item">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/559492350240" target="_blank" rel="noopener">(00) 00000-0000</a>
+            </div>
+          </div>
+          <a href="https://wa.me/559492350240?text=Olá!%20Gostaria%20de%20agendar%20uma%20visita%20à%20loja." 
+             class="btn btn--gold" target="_blank" rel="noopener">
+            Agendar Visita
+          </a>
+        </div>
+        <div class="location__map reveal">
+          <div class="map-placeholder" aria-label="Mapa da localização">
+            <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" aria-hidden="true">
+              <rect width="400" height="280" fill="#1a1a1a"/>
+              <rect x="20" y="20" width="360" height="240" rx="4" fill="#222"/>
+              <line x1="0" y1="140" x2="400" y2="140" stroke="#333" stroke-width="1"/>
+              <line x1="200" y1="0" x2="200" y2="280" stroke="#333" stroke-width="1"/>
+              <rect x="80" y="80" width="60" height="40" rx="2" fill="#2a2a2a" stroke="#333" stroke-width="1"/>
+              <rect x="160" y="60" width="80" height="60" rx="2" fill="#2a2a2a" stroke="#333" stroke-width="1"/>
+              <rect x="260" y="90" width="50" height="35" rx="2" fill="#2a2a2a" stroke="#333" stroke-width="1"/>
+              <rect x="80" y="160" width="70" height="45" rx="2" fill="#2a2a2a" stroke="#333" stroke-width="1"/>
+              <rect x="270" y="155" width="65" height="50" rx="2" fill="#2a2a2a" stroke="#333" stroke-width="1"/>
+              <circle cx="200" cy="130" r="14" fill="#C9A84C" opacity="0.9"/>
+              <circle cx="200" cy="130" r="6" fill="#1a1a1a"/>
+              <circle cx="200" cy="130" r="28" stroke="#C9A84C" stroke-width="1" fill="none" opacity="0.3"/>
+              <circle cx="200" cy="130" r="42" stroke="#C9A84C" stroke-width="0.5" fill="none" opacity="0.15"/>
+            </svg>
+            <div class="map-placeholder__label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5" width="18" height="18" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Sr. & Sra. Coutinho
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="#inicio" class="logo logo--footer">
+              <div class="logo__hexagon logo__hexagon--sm">
+                <svg viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <polygon points="40,2 78,22 78,68 40,88 2,68 2,22" stroke="url(#fgold)" stroke-width="2.5" fill="none"/>
+                  <text x="40" y="58" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="36" font-weight="700" fill="url(#fgold)">S</text>
+                  <defs><linearGradient id="fgold" x1="0" y1="0" x2="80" y2="90" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#F0D080"/><stop offset="100%" stop-color="#9A7A30"/></linearGradient></defs>
+                </svg>
+              </div>
+              <div class="logo__text">
+                <span class="logo__name">Sr. <em>&</em> Sra.</span>
+                <span class="logo__surname">Coutinho</span>
+                <span class="logo__tagline">Exclusive · Since 2021</span>
+              </div>
+            </a>
+            <p class="footer__desc">Alfaiataria exclusiva, ternos e moda masculina social. Atendimento personalizado para os momentos mais importantes da sua vida.</p>
+            <div class="footer__social">
+              <a href="#" class="social-link" aria-label="Instagram da Sr. & Sra. Coutinho">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+              <a href="https://wa.me/559492350240" class="social-link" aria-label="WhatsApp da Sr. & Sra. Coutinho" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <h4>Coleção</h4>
+            <ul>
+              <li><a href="#ternos">Ternos</a></li>
+              <li><a href="#blazers">Blazers</a></li>
+              <li><a href="#camisas">Camisas Sociais</a></li>
+              <li><a href="#acessorios">Acessórios</a></li>
+              <li><a href="#casamentos">Casamentos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4>Informações</h4>
+            <ul>
+              <li><a href="#sobre">Nossa História</a></li>
+              <li><button class="footer-link" id="openSizeGuide2">Tabela de Medidas</button></li>
+              <li><a href="#">Política de Trocas</a></li>
+              <li><a href="#">Envio e Entrega</a></li>
+              <li><a href="#">Privacidade</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4>Atendimento</h4>
+            <ul>
+              <li><a href="https://wa.me/559492350240" target="_blank" rel="noopener">WhatsApp</a></li>
+              <li><a href="mailto:contato@srsracoutinho.com.br">E-mail</a></li>
+              <li><a href="#contato">Nossa Localização</a></li>
+              <li><a href="#casamentos">Consultoria para Noivos</a></li>
+            </ul>
+            <div class="footer__payments" aria-label="Formas de pagamento">
+              <span>Pagamentos:</span>
+              <div class="payment-badges">
+                <span class="payment-badge">Visa</span>
+                <span class="payment-badge">Master</span>
+                <span class="payment-badge">Pix</span>
+                <span class="payment-badge">Boleto</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2025 Sr. & Sra. Coutinho · Todos os direitos reservados · <em>Exclusive Since 2021</em></p>
+        <p>Desenvolvido com excelência para uma marca de excelência ✦</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       FLOATING WHATSAPP BUTTON
+  ═══════════════════════════════════════════ -->
+  <a href="https://wa.me/559492350240?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20uma%20consultoria." 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener"
+     aria-label="Iniciar conversa no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-float__tooltip">Falar com consultor</span>
+  </a>
+
+  <!-- ═══════════════════════════════════════════
+       MODAL — TABELA DE MEDIDAS
+  ═══════════════════════════════════════════ -->
+  <div class="modal" id="sizeModal" role="dialog" aria-modal="true" aria-labelledby="sizeModalTitle">
+    <div class="modal__overlay" id="sizeModalOverlay"></div>
+    <div class="modal__box">
+      <button class="modal__close" id="closeSizeModal" aria-label="Fechar tabela de medidas">✕</button>
+      <h3 id="sizeModalTitle">Tabela de Medidas — Ternos</h3>
+      <p class="modal__subtitle">Meça seu ombro, peito e cintura para encontrar o tamanho ideal.</p>
+      <div class="size-table-wrapper" role="region" aria-label="Tabela de medidas">
+        <table class="size-table">
+          <thead>
+            <tr>
+              <th scope="col">Tamanho</th>
+              <th scope="col">Ombro (cm)</th>
+              <th scope="col">Peito (cm)</th>
+              <th scope="col">Cintura (cm)</th>
+              <th scope="col">Comprimento (cm)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>P (48)</td><td>43</td><td>92–96</td><td>84–88</td><td>74</td></tr>
+            <tr><td>M (50)</td><td>45</td><td>96–100</td><td>88–92</td><td>76</td></tr>
+            <tr><td>G (52)</td><td>47</td><td>100–104</td><td>92–96</td><td>78</td></tr>
+            <tr><td>GG (54)</td><td>49</td><td>104–108</td><td>96–100</td><td>80</td></tr>
+            <tr><td>XGG (56)</td><td>51</td><td>108–112</td><td>100–104</td><td>82</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal__cta">
+        <p>Ainda com dúvida?</p>
+        <a href="https://wa.me/559492350240?text=Olá!%20Preciso%20de%20ajuda%20para%20encontrar%20meu%20tamanho%20no%20terno." 
+           class="btn btn--gold" target="_blank" rel="noopener">
+          Falar com Consultor
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       CART SIDEBAR
+  ═══════════════════════════════════════════ -->
+  <div class="cart-sidebar" id="cartSidebar" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-panel">
+      <div class="cart-panel__header">
+        <h3 id="cartTitle">Sua Sacola</h3>
+        <button class="cart-panel__close" id="closeCart" aria-label="Fechar sacola">✕</button>
+      </div>
+      <div class="cart-panel__body" id="cartBody">
+        <div class="cart-empty" id="cartEmpty">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" width="48" height="48" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <p>Sua sacola está vazia</p>
+          <a href="#colecao" class="btn btn--gold">Ver Coleção</a>
+        </div>
+        <ul class="cart-items" id="cartItems" aria-label="Itens na sacola"></ul>
+      </div>
+      <div class="cart-panel__footer" id="cartFooter" style="display:none">
+        <div class="cart-total">
+          <span>Total:</span>
+          <strong id="cartTotal">R$ 0,00</strong>
+        </div>
+        <a href="https://wa.me/559492350240?text=Olá!%20Gostaria%20de%20finalizar%20minha%20compra." 
+           class="btn btn--gold btn--full btn--whatsapp-full" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Finalizar via WhatsApp
+        </a>
+        <button class="btn btn--ghost btn--full" id="clearCart">Limpar Sacola</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
